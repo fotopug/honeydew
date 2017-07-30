@@ -1,0 +1,20 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<div class="floater">
+<h1>Welcome to the {{ store.store_name }}</h1>
+<hr>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<p>You are welcome to use our wifi while you enjoy your meal. Enter your email for news and offers from {{ store.store_name }}.</p>
+
+<form action="{% url 'honeypot:thanks' store.pk %}" method="POST">
+	{% csrf_token %}
+	{{ form }}
+	<br>
+	<input class="sButton" type="submit" value="Accept & Connect">
+</form>
+
+<p class="small">I agree to the <a href="link">terms</a> and <a href="link">conditions</a> of service</p>
+</div>

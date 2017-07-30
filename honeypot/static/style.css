@@ -1,0 +1,66 @@
+h1 {
+	text-align: center;
+    color: #444;
+    font-size: 2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+	color: #719FFF;
+}
+
+p {
+	color: grey;
+	font-size: .9em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+p.small {
+	font-size: .7em;
+}
+
+body {
+    background: white url("images/background3.png") right bottom;
+}
+
+div.floater {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #AAA;
+    color: black;
+    margin: 175px 260px;
+    padding: 20px 60px;
+    text-align: center;
+} 
+
+input.sButton {
+	color: white;
+	background-color: #719FFF;
+	border-radius: 5px;
+	font-size: 1em;
+	height: 40px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    border-width: 0px;
+}
+
+input {
+	width: 90%;
+	height: 40px;
+	padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #AAA;
+}
+
+hr {
+	border-color: #EEEEEE;
+	border-width: 1px;
+	color: white;
+}

@@ -1,0 +1,9 @@
+{% if stores_with_wifi %}
+    <ul>
+    {% for store in stores_with_wifi %}
+        <li><a href="{% url 'honeypot:welcome' store.pk %}">{{ store.store_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No stores are available.</p>
+{% endif %}
